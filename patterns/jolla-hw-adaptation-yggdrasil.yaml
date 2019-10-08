@@ -84,5 +84,8 @@ Requires:
 #- qt5-qtmultimedia-plugin-mediaservice-irisradio
 #- jolla-mediaplayer-radio
 
+# Bluetooth
+- bluebinder
+
 Summary: Jolla HW Adaptation k63v2_64_bsp
 
