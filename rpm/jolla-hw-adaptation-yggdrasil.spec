@@ -68,7 +68,7 @@ Requires: usb-moded
 Requires: rfkill
 
 # enable device lock and allow to select untrusted software
-Requires: jolla-devicelock-plugin-encsfa
+#Requires: jolla-devicelock-plugin-encsfa
 
 # For GPS
 Requires: geoclue-provider-hybris
