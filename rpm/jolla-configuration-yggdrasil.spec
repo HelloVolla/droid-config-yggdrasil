@@ -46,6 +46,10 @@ Requires: csd
 # to improve camera startup times and the like
 Requires: mapplauncherd-booster-silica-qt5-media
 
+#Add FP support
+Requires: sailfish-fpd-community
+Requires: sailfish-devicelock-fpd
+
 %description
 Meta package to install packages for yggdrasil configurations
 %files 
