@@ -1,0 +1,6 @@
+service wlan_assistant /vendor/bin/wlan_assistant_DISABLED
+    disabled
+    class main
+    user wifi
+    group system gps inet
+ 
