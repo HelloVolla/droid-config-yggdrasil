@@ -27,7 +27,7 @@ Requires: ngfd-plugin-native-vibrator
 Requires: qt5-feedback-haptics-native-vibrator
 
 # Sensors
-Requires: hybris-libsensorfw-qt5
+Requires: hybris-libsensorfw-qt5-binder
 
 # Vibra
 Requires: ngfd-plugin-native-vibrator
