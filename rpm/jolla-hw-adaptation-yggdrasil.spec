@@ -67,6 +67,9 @@ Requires: usb-moded
 
 Requires: rfkill
 
+# Needed for the mediatek wmt wifi module to allow tethering
+Requires: sailfish-connman-plugin-tethering-wmtwifi 
+
 # enable device lock and allow to select untrusted software
 #Requires: jolla-devicelock-plugin-encsfa
 
