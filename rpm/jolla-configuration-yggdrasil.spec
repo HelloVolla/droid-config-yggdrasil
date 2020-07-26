@@ -50,6 +50,9 @@ Requires: mapplauncherd-booster-silica-qt5-media
 Requires: sailfish-fpd-community
 Requires: sailfish-devicelock-fpd
 
+#Include SailfishSecrets support
+Requires: sailfishsecretsdaemon-secretsplugins-default
+
 %description
 Meta package to install packages for yggdrasil configurations
 %files 
