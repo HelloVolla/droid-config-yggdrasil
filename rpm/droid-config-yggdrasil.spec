@@ -5,7 +5,7 @@
 %define vendor volla
 
 %define vendor_pretty Volla
-%define device_pretty Phone
+%define device_pretty Volla Phone
 
 # Community HW adaptations need this
 %define community_adaptation 1
