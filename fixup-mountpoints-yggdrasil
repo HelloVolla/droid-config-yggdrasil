@@ -1,0 +1,71 @@
+#!/bin/sh
+# Fix up mount points device node names.
+#
+# /data needs to be mounted in initrd, but there is no udev that early,
+# which means there is no /dev/block/platform/*/by-name/* (or bootdevice).
+# This file is a map from the "by-name" path to /dev/mmcblkMpN.
+# It also serves dhd to convert fstab and *.rc mount entries to systemd units,
+# because at that boot stage there is still no udev "by-name" paths, even when
+# systemd starts to execut the "*.mount" units.
+
+DEVICE=$1
+shift
+
+echo "Fixing mount-points for device $DEVICE"
+
+case "$DEVICE" in
+        "yggdrasil")
+        sed -i \
+            -e 's block/platform/bootdevice/by-name/boot mmcblk0p25 ' \
+            -e 's block/platform/bootdevice/by-name/boot_para mmcblk0p2 ' \
+            -e 's block/platform/bootdevice/by-name/cache mmcblk0p32 ' \
+            -e 's block/platform/bootdevice/by-name/dtbo mmcblk0p27 ' \
+            -e 's block/platform/bootdevice/by-name/expdb mmcblk0p5 ' \
+            -e 's block/platform/bootdevice/by-name/flashinfo mmcblk0p34 ' \
+            -e 's block/platform/bootdevice/by-name/frp mmcblk0p6 ' \
+            -e 's block/platform/bootdevice/by-name/gz1 mmcblk0p20 ' \
+            -e 's block/platform/bootdevice/by-name/gz2 mmcblk0p21 ' \
+            -e 's block/platform/bootdevice/by-name/lk mmcblk0p23 ' \
+            -e 's block/platform/bootdevice/by-name/lk2 mmcblk0p24 ' \
+            -e 's block/platform/bootdevice/by-name/logo mmcblk0p26 ' \
+            -e 's block/platform/bootdevice/by-name/md1dsp mmcblk0p16 ' \
+            -e 's block/platform/bootdevice/by-name/md1img mmcblk0p15 ' \
+            -e 's block/platform/bootdevice/by-name/metadata mmcblk0p9 ' \
+            -e 's block/platform/bootdevice/by-name/nvcfg mmcblk0p7 ' \
+            -e 's block/platform/bootdevice/by-name/nvdata mmcblk0p8 ' \
+            -e 's block/platform/bootdevice/by-name/nvram mmcblk0p22 ' \
+            -e 's block/platform/bootdevice/by-name/para mmcblk0p4 ' \
+            -e 's block/platform/bootdevice/by-name/persist mmcblk0p13 ' \
+            -e 's block/platform/bootdevice/by-name/preloader_a mmcblk0boot0 ' \
+            -e 's block/platform/bootdevice/by-name/preloader_b mmcblk0boot1 ' \
+            -e 's block/platform/bootdevice/by-name/proinfo mmcblk0p1 ' \
+            -e 's block/platform/bootdevice/by-name/protect1 mmcblk0p10 ' \
+            -e 's block/platform/bootdevice/by-name/protect2 mmcblk0p11 ' \
+            -e 's block/platform/bootdevice/by-name/recovery mmcblk0p3 ' \
+            -e 's block/platform/bootdevice/by-name/sec1 mmcblk0p14 ' \
+            -e 's block/platform/bootdevice/by-name/seccfg mmcblk0p12 ' \
+            -e 's block/platform/bootdevice/by-name/spmfw mmcblk0p17 ' \
+            -e 's block/platform/bootdevice/by-name/sspm_1 mmcblk0p18 ' \
+            -e 's block/platform/bootdevice/by-name/sspm_2 mmcblk0p19 ' \
+            -e 's block/platform/bootdevice/by-name/system mmcblk0p31 ' \
+            -e 's block/platform/bootdevice/by-name/tee1 mmcblk0p28 ' \
+            -e 's block/platform/bootdevice/by-name/tee2 mmcblk0p29 ' \
+            -e 's block/platform/bootdevice/by-name/userdata mmcblk0p33 ' \
+            -e 's block/platform/bootdevice/by-name/vendor mmcblk0p30 ' \
+            "$@"
+        ;;
+    *)
+        cat <<EOF
+
+****************************************************************
+****************************************************************
+ERROR: $DEVICE does not have mountpoint fixup data - see
+       Sailfish OS HADK for details on how to fix this.
+****************************************************************
+****************************************************************
+
+EOF
+        exit 1
+        ;;
+esac
+
