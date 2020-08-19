@@ -12,5 +12,5 @@ mount -o bind /usr/libexec/droid-hybris/system/lib64/libcam.halsensor.so /vendor
 mount -o bind /usr/libexec/droid-hybris/system/lib64/libmtkcam_metastore.so /vendor/lib64/libmtkcam_metastore.so
 
 # Override the audio HAL becuase it mutes the mic
-mount -o bind /usr/libexec/droid-hybris/vendor/lib/audio.primary.mt6763.so /vendor/lib/audio.primary.mt6763.so
-mount -o bind /usr/libexec/droid-hybris/vendor/lib64/audio.primary.mt6763.so /vendor/lib64/audio.primary.mt6763.so
+mount -o bind /usr/libexec/droid-hybris/vendor/lib/hw/audio.primary.mt6763.so /vendor/lib/hw/audio.primary.mt6763.so
+mount -o bind /usr/libexec/droid-hybris/vendor/lib64/hw/audio.primary.mt6763.so /vendor/lib64/hw/audio.primary.mt6763.so
