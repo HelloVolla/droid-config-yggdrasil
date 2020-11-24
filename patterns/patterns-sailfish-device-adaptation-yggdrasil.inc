@@ -1,9 +1,16 @@
-Name: jolla-hw-adaptation-yggdrasil
-Summary: Jolla HW Adaptation yggdrasil
-Version: 0.0.1
-Release: 1
-License: BSD-3-Clause
-Source: %{name}-%{version}.tar.gz
+%package -n patterns-sailfish-device-adaptation-yggdrasil
+Summary: Sailfish HW Adaptation yggdrasil
+
+Requires: droid-hal-yggdrasil
+Requires: droid-hal-yggdrasil-img-boot
+Requires: droid-hal-yggdrasil-kernel-modules
+Requires: droid-config-yggdrasil-sailfish
+Requires: droid-config-yggdrasil-pulseaudio-settings
+Requires: droid-config-yggdrasil-policy-settings
+Requires: droid-config-yggdrasil-preinit-plugin
+Requires: droid-config-yggdrasil-flashing
+Requires: droid-config-yggdrasil-bluez5
+Requires: droid-hal-version-yggdrasil
 
 Requires: qt5-plugin-generic-evdev
 
@@ -55,6 +62,7 @@ Requires: gstreamer1.0-plugins-base
 Requires: gstreamer1.0-plugins-bad
 Requires: nemo-gstreamer1.0-interfaces
 Requires: gstreamer1.0-droid
+Requires: gmp-droid
 
 # This is needed for notification LEDs
 # yggdrasil does not have a notification LED
@@ -83,19 +91,7 @@ Requires: geoclue-provider-hybris
 # For mounting SD card automatically
 Requires: sd-utils
 
-Requires: droid-hal-yggdrasil
-Requires: droid-hal-yggdrasil-img-boot
-Requires: droid-hal-yggdrasil-kernel-modules
-Requires: droid-config-yggdrasil-sailfish
-Requires: droid-config-yggdrasil-pulseaudio-settings
-Requires: droid-config-yggdrasil-policy-settings
-Requires: droid-config-yggdrasil-preinit-plugin
-Requires: droid-config-yggdrasil-flashing
-Requires: droid-config-yggdrasil-bluez5
-Requires: droid-hal-version-yggdrasil
+%description -n patterns-sailfish-device-adaptation-yggdrasil
+Pattern with packages for yggdrasil HW Adaptation
 
-
-%description
-Meta package to install packages for yggdrasil HW Adaptation
-%files
- 
+%files -n patterns-sailfish-device-adaptation-yggdrasil

@@ -1,10 +1,9 @@
-Name: jolla-configuration-yggdrasil
-Summary: Jolla Configuration yggdrasil
-Version: 0.0.1
-Release: 1
-License: BSD-3-Clause
-Source: %{name}-%{version}.tar.gz
-Requires: jolla-hw-adaptation-yggdrasil
+%package -n patterns-sailfish-device-configuration-yggdrasil
+Summary: Sailfish HW Adaptation yggdrasil
+
+Requires: patterns-sailfish-device-configuration-common-t5
+Requires: patterns-sailfish-device-adaptation-t5
+
 Requires: patterns-sailfish-cellular-apps
 Requires: patterns-sailfish-applications
 Requires: patterns-sailfish-ui
@@ -53,6 +52,8 @@ Requires: sailfish-devicelock-fpd
 #Include SailfishSecrets support
 Requires: sailfishsecretsdaemon-secretsplugins-default
 
-%description
-Meta package to install packages for yggdrasil configurations
-%files 
+%description -n patterns-sailfish-device-configuration-yggdrasil
+Pattern with packages for yggdrasil configurations
+
+%files -n patterns-sailfish-device-configuration-yggdrasil
+
