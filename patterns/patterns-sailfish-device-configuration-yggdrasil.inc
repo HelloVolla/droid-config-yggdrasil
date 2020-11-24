@@ -1,8 +1,8 @@
 %package -n patterns-sailfish-device-configuration-yggdrasil
 Summary: Sailfish HW Adaptation yggdrasil
 
-Requires: patterns-sailfish-device-configuration-common-t5
-Requires: patterns-sailfish-device-adaptation-t5
+Requires: patterns-sailfish-device-configuration-common-yggdrasil
+Requires: patterns-sailfish-device-adaptation-yggdrasil
 
 Requires: patterns-sailfish-cellular-apps
 Requires: patterns-sailfish-applications
