@@ -14,7 +14,7 @@ shift
 echo "Fixing mount-points for device $DEVICE"
 
 case "$DEVICE" in
-        "yggdrasil")
+        "GS290")
         sed -i \
             -e 's block/platform/bootdevice/by-name/boot mmcblk0p25 ' \
             -e 's block/platform/bootdevice/by-name/boot_para mmcblk0p2 ' \
