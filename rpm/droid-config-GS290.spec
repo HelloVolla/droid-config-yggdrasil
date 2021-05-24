@@ -10,7 +10,7 @@
 # Community HW adaptations need this
 %define community_adaptation 1
 
-%define out_of_image_files 1
+#define out_of_image_files 1
 
 # Sailfish OS is considered to-scale, if in app grid you get 4-in-a-row icons
 # and 2x2 or 3x3 covers when up-to-4 or 5-or-more apps are open respectively.
@@ -33,8 +33,8 @@ Provides: jolla-settings-system-reset
 AutoReqProv: no
 
 %include droid-configs-device/droid-configs.inc
-%include patterns/patterns-sailfish-device-adaptation-gs290.inc
-%include patterns/patterns-sailfish-device-configuration-gs290.inc
+%include patterns/patterns-sailfish-device-adaptation-GS290.inc
+%include patterns/patterns-sailfish-device-configuration-GS290.inc
 
 # IMPORTANT if you want to comment out any macros in your .spec, delete the %
 # sign, otherwise they will remain defined! E.g.:

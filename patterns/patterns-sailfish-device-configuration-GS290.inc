@@ -1,8 +1,8 @@
-%package -n patterns-sailfish-device-configuration-yggdrasil
-Summary: Sailfish HW Adaptation yggdrasil
+%package -n patterns-sailfish-device-configuration-GS290
+Summary: Sailfish HW Adaptation GS290
 
-Requires: patterns-sailfish-device-configuration-common-yggdrasil
-Requires: patterns-sailfish-device-adaptation-yggdrasil
+Requires: patterns-sailfish-device-configuration-common-GS290
+Requires: patterns-sailfish-device-adaptation-GS290
 
 Requires: patterns-sailfish-cellular-apps
 Requires: patterns-sailfish-applications
@@ -52,8 +52,8 @@ Requires: sailfish-devicelock-fpd
 #Include SailfishSecrets support
 Requires: sailfishsecretsdaemon-secretsplugins-default
 
-%description -n patterns-sailfish-device-configuration-yggdrasil
-Pattern with packages for yggdrasil configurations
+%description -n patterns-sailfish-device-configuration-GS290
+Pattern with packages for GS290 configurations
 
-%files -n patterns-sailfish-device-configuration-yggdrasil
+%files -n patterns-sailfish-device-configuration-GS290
 
