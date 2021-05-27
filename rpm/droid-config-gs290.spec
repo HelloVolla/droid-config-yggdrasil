@@ -10,6 +10,7 @@
 
 # Community HW adaptations need this
 %define community_adaptation 1
+%define android_version_major 10
 
 #define out_of_image_files 1
 
