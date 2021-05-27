@@ -1,16 +1,16 @@
-%package -n patterns-sailfish-device-adaptation-GS290
-Summary: Sailfish HW Adaptation GS290
+%package -n patterns-sailfish-device-adaptation-gs290
+Summary: Sailfish HW Adaptation gs290
 
-Requires: droid-hal-GS290
-Requires: droid-hal-GS290-img-boot
-Requires: droid-hal-GS290-kernel-modules
-Requires: droid-config-GS290-sailfish
-Requires: droid-config-GS290-pulseaudio-settings
-Requires: droid-config-GS290-policy-settings
-Requires: droid-config-GS290-preinit-plugin
-Requires: droid-config-GS290-flashing
-Requires: droid-config-GS290-bluez5
-Requires: droid-hal-version-GS290
+Requires: droid-hal-gs290
+Requires: droid-hal-gs290-img-boot
+Requires: droid-hal-gs290-kernel-modules
+Requires: droid-config-gs290-sailfish
+Requires: droid-config-gs290-pulseaudio-settings
+Requires: droid-config-gs290-policy-settings
+Requires: droid-config-gs290-preinit-plugin
+Requires: droid-config-gs290-flashing
+Requires: droid-config-gs290-bluez5
+Requires: droid-hal-version-gs290
 
 Requires: qt5-plugin-generic-evdev
 
@@ -65,7 +65,7 @@ Requires: gstreamer1.0-droid
 Requires: gmp-droid
 
 # This is needed for notification LEDs
-# GS290 does not have a notification LED
+# gs290 does not have a notification LED
 #Requires: mce-plugin-libhybris
 
 ## USB mode controller
@@ -91,7 +91,7 @@ Requires: geoclue-provider-hybris
 # For mounting SD card automatically
 Requires: sd-utils
 
-%description -n patterns-sailfish-device-adaptation-GS290
-Pattern with packages for GS290 HW Adaptation
+%description -n patterns-sailfish-device-adaptation-gs290
+Pattern with packages for gs290 HW Adaptation
 
-%files -n patterns-sailfish-device-adaptation-GS290
+%files -n patterns-sailfish-device-adaptation-gs290
