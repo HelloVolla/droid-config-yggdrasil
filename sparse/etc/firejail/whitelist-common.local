@@ -1,0 +1,9 @@
+#GS290 additional whitelist
+whitelist /dev/mali0
+whitelist /dev/pmsg0
+whitelist /dev/ion
+whitelist /dev/hwbinder
+whitelist /dev/__properties__
+
+#This is to allow loading libtlspadding
+private-etc ld.so.preload
