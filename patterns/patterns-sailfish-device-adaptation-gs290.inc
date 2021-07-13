@@ -54,6 +54,7 @@ Requires: qt5-qtmultimedia-plugin-mediaservice-gstmediacapture
 Requires: qt5-qtwayland-wayland_egl
 Requires: qt5-qpa-hwcomposer-plugin
 Requires: qtscenegraph-adaptation
+Requires: libtls-padding
 
 # Add GStreamer v1.0 as standard
 Requires: gstreamer1.0
