@@ -14,6 +14,9 @@ Requires: droid-hal-version-gs290
 
 Requires: qt5-plugin-generic-evdev
 
+# Fixes off MTK behabiour
+Requires: libtls-padding
+
 # Hybris packages
 Requires: libhybris-libEGL
 Requires: libhybris-libGLESv2
