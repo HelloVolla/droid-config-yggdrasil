@@ -1,0 +1,11 @@
+[Unit]
+Description=Ofono fix SMS hack
+After=start-user-session.service
+After=ofono.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh /usr/bin/droid/ofono-fix-sms-hack.sh
+
+[Install]
+WantedBy=graphical.target
