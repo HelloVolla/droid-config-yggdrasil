@@ -1,4 +1,4 @@
-#GS290 additional whitelist
+#MTK additional whitelist
 whitelist /dev/mali0
 whitelist /dev/pmsg0
 whitelist /dev/ion
