@@ -1,9 +1,9 @@
 # These and other macros are documented in ../droid-configs-device/droid-configs.inc
 # Feel free to cleanup this file by removing comments, once you have memorised them ;)
 
-%define device GS290
-%define vendor gigaset
-%define rpm_device gs290
+%define device yggdrasil
+%define vendor volla
+%define rpm_device yggdrasil
 
 %define vendor_pretty Volla
 %define device_pretty Volla Phone
@@ -35,8 +35,8 @@ Provides: jolla-settings-system-reset
 AutoReqProv: no
 
 %include droid-configs-device/droid-configs.inc
-%include patterns/patterns-sailfish-device-adaptation-gs290.inc
-%include patterns/patterns-sailfish-device-configuration-gs290.inc
+%include patterns/patterns-sailfish-device-adaptation-yggdrasil.inc
+%include patterns/patterns-sailfish-device-configuration-yggdrasil.inc
 
 # IMPORTANT if you want to comment out any macros in your .spec, delete the %
 # sign, otherwise they will remain defined! E.g.:
