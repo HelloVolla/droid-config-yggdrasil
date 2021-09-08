@@ -12,7 +12,7 @@
 %define community_adaptation 1
 %define android_version_major 10
 
-#define out_of_image_files 1
+%define out_of_image_files 1
 
 # Sailfish OS is considered to-scale, if in app grid you get 4-in-a-row icons
 # and 2x2 or 3x3 covers when up-to-4 or 5-or-more apps are open respectively.
