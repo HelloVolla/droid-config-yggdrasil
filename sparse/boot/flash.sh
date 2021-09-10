@@ -8,4 +8,4 @@ fastboot flash userdata sailfish.img001
 fastboot flash logo logo.bin
 
 #Lock partition to allow flashing and remove boot warning
-fastboot flash lk lk-yggdrasil.img
+#fastboot flash lk lk-yggdrasil.img
