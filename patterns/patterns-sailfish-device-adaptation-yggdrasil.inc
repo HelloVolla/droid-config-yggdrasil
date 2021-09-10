@@ -84,10 +84,10 @@ Requires: rfkill
 Requires: sailfish-connman-plugin-tethering-wmtwifi 
 
 # enable device lock and allow to select untrusted software
-#Requires: jolla-devicelock-plugin-encsfa
+Requires: jolla-devicelock-plugin-encsfa
 
 # Enable home encryption
-#Requires: sailfish-device-encryption
+Requires: sailfish-device-encryption
 
 # For GPS
 Requires: geoclue-provider-hybris
