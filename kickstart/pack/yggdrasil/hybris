@@ -24,6 +24,7 @@ RELEASENAME=${NAME// /_}-${SAILFISH_CUSTOMER// /_}${SAILFISH_CUSTOMER:+-}${EXTRA
 mkdir root
 mount -o loop root.img root
 sed -i '/\/opt/d' root/etc/fstab
+sed -i '/\/home/d' root/etc/fstab
 umount root
 rm -rf root
 
@@ -89,14 +90,14 @@ echo "Create logical volume ROOT size: $ROOTSIZE"
 /usr/sbin/lvcreate -L ${ROOTSIZE}B --name root sailfish
 
 echo "Create logical volume HOME size: $HOMESIZE"
-/usr/sbin/lvcreate -L ${HOMESIZE}B --name home sailfish
+/usr/sbin/lvcreate -L ${HOMESIZE}B --name home_open sailfish
 
 /bin/sync
 /usr/sbin/vgchange -a y sailfish
 
 dd if=root.img bs=$BLOCKSIZE count=$ROOTBLOCKS of=/dev/sailfish/root
 
-dd if=home.img bs=$BLOCKSIZE count=$HOMEBLOCKS of=/dev/sailfish/home
+dd if=home.img bs=$BLOCKSIZE count=$HOMEBLOCKS of=/dev/sailfish/home_open
 
 /usr/sbin/vgchange -a n sailfish
 
