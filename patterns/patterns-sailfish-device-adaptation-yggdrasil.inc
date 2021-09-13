@@ -88,6 +88,8 @@ Requires: jolla-devicelock-plugin-encsfa
 
 # Enable home encryption
 #Requires: sailfish-device-encryption
+Requires: droid-hwcrypt
+Requires: sailfish-device-encryption-community
 
 # For GPS
 Requires: geoclue-provider-hybris
