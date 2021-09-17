@@ -1,6 +1,7 @@
 #!/bin/sh
 #This file LD_PRELOADs a file that the linker can find, so this removes that
 mount -o bind /usr/libexec/droid-hybris/system/etc/init/init.aee.rc /system/etc/init/hw/init.aee.rc
+mount -o bind /usr/libexec/droid-hybris/system/etc/init/kpoc_charger.rc /system/etc/init/kpoc_charger.rc
 
 #mkdir -p /system
 #mount -t overlay overlay -o lowerdir=/usr/libexec/droid-hybris/system:/system_root/system /system

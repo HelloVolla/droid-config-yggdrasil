@@ -1,0 +1,4 @@
+service kpoc_charger /system/bin/kpoc_charger_HYBRIS_DISABLED
+    class charger
+    override
+
