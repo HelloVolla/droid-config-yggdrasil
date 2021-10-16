@@ -1,0 +1,104 @@
+%package -n patterns-sailfish-device-adaptation-yggdrasilx
+Summary: Sailfish HW Adaptation yggdrasilx
+
+Requires: droid-hal-yggdrasilx
+Requires: droid-hal-yggdrasilx-img-boot
+Requires: droid-hal-yggdrasilx-kernel-modules
+Requires: droid-config-yggdrasilx-sailfish
+Requires: droid-config-yggdrasilx-pulseaudio-settings
+Requires: droid-config-yggdrasilx-policy-settings
+Requires: droid-config-yggdrasilx-preinit-plugin
+Requires: droid-config-yggdrasilx-flashing
+Requires: droid-config-yggdrasilx-bluez5
+Requires: droid-hal-version-yggdrasilx
+
+Requires: qt5-plugin-generic-evdev
+
+# Fixes off MTK behabiour
+Requires: libtls-padding
+
+# Hybris packages
+Requires: libhybris-libEGL
+Requires: libhybris-libGLESv2
+Requires: libhybris-libwayland-egl
+
+# Bluetooth
+Requires: bluez5-tools
+Requires: bluebinder
+
+# Ofono
+Requires: ofono-ril-binder-plugin
+
+# NFC
+Requires: nfcd-binder-plugin
+
+# Vibra
+Requires: ngfd-plugin-native-vibrator
+Requires: qt5-feedback-haptics-native-vibrator
+
+# Sensors
+Requires: hybris-libsensorfw-qt5-binder
+
+# Vibra
+Requires: ngfd-plugin-native-vibrator
+Requires: qt5-feedback-haptics-native-vibrator
+
+# Pulseadio
+Requires: pulseaudio-modules-droid
+Requires: pulseaudio-modules-droid-hidl
+
+# Needed for camera to work
+Requires: audiosystem-passthrough-dummy-af
+
+# for audio recording to work:
+Requires: qt5-qtmultimedia-plugin-mediaservice-gstmediacapture
+
+# These need to be per-device due to differing backends (fbdev, eglfs, hwc, ..?)
+Requires: qt5-qtwayland-wayland_egl
+Requires: qt5-qpa-hwcomposer-plugin
+Requires: qtscenegraph-adaptation
+Requires: libtls-padding
+
+# Add GStreamer v1.0 as standard
+Requires: gstreamer1.0
+Requires: gstreamer1.0-plugins-good
+Requires: gstreamer1.0-plugins-base
+Requires: gstreamer1.0-plugins-bad
+Requires: nemo-gstreamer1.0-interfaces
+Requires: gstreamer1.0-droid
+Requires: gmp-droid
+
+# This is needed for notification LEDs
+# yggdrasilx does not have a notification LED
+#Requires: mce-plugin-libhybris
+
+## USB mode controller
+## Enables mode selector upon plugging USB cable:
+Requires: usb-moded
+#Requires: usb-moded-defaults-android
+#Requires: usb-moded-developer-mode-android
+
+Requires: rfkill
+
+# Needed for the mediatek wmt wifi module to allow tethering
+Requires: sailfish-connman-plugin-tethering-wmtwifi 
+
+# enable device lock and allow to select untrusted software
+Requires: jolla-devicelock-plugin-encsfa
+
+# Enable home encryption
+#Requires: sailfish-device-encryption
+Requires: droid-hwcrypt
+Requires: sailfish-device-encryption-community
+Requires: sailfish-device-encryption-community-droid
+
+# For GPS
+Requires: geoclue-provider-hybris
+
+# For mounting SD card automatically
+Requires: sd-utils
+
+%description -n patterns-sailfish-device-adaptation-yggdrasilx
+Pattern with packages for yggdrasilx HW Adaptation
+
+%files -n patterns-sailfish-device-adaptation-yggdrasilx
