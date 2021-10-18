@@ -14,7 +14,7 @@ Requires: patterns-sailfish-store-applications
 Requires: jolla-rnd-device
 #End sailfish-porter-tools
 
-Requires: sailfish-content-graphics-z1.5
+Requires: sailfish-content-graphics-z1.0
 
 # For NFC
 Requires: jolla-settings-system-nfc
