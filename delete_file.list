@@ -1,0 +1,2 @@
+/usr/lib/systemd/user/lipstick.service.d/50-compositor.conf
+/usr/lib/systemd/user/lipstick.service.d/50-vendor.hwcomposer-2-3.conf
