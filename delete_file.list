@@ -2,3 +2,4 @@
 /usr/lib/systemd/user/lipstick.service.d/50-vendor.hwcomposer-2-3.conf
 /usr/lib/systemd/system/droid-bootctl.service
 /usr/bin/droid/droid-bootctl.sh
+/usr/lib/systemd/system/graphical.target.wants/droid-bootctl.service
