@@ -91,6 +91,7 @@ Requires: jolla-devicelock-plugin-encsfa
 Requires: droid-hwcrypt
 Requires: sailfish-device-encryption-community
 Requires: sailfish-device-encryption-community-droid
+Requires: libgbinder-tools
 
 # For GPS
 Requires: geoclue-provider-hybris
