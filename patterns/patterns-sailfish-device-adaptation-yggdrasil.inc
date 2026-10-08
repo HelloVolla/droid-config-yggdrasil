@@ -27,7 +27,8 @@ Requires: bluez5-tools
 Requires: bluebinder
 
 # Ofono
-Requires: ofono-ril-binder-plugin
+Requires: ofono-binder-plugin
+Requires: ofono-binder-plugin-ext-mtk
 
 # NFC
 Requires: nfcd-binder-plugin
@@ -95,9 +96,6 @@ Requires: libgbinder-tools
 
 # For GPS
 Requires: geoclue-provider-hybris
-
-# For mounting SD card automatically
-Requires: sd-utils
 
 %description -n patterns-sailfish-device-adaptation-yggdrasil
 Pattern with packages for yggdrasil HW Adaptation
